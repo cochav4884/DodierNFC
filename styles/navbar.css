@@ -8,16 +8,21 @@ nav {
 #navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 50%;                 /* center the navbar */
+  transform: translateX(-50%); /* fix horizontal shift */
+  width: calc(100% - 20px);  /* leave a small margin for shadow/rounding */
   z-index: 1020;
-  background-color: rgb(255, 255, 255); /* primary navbar color */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  min-height: 60px; /* consistent height */
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  min-height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* brand left, menu right */
+  justify-content: space-between;
   padding: 0 1rem;
+  box-sizing: border-box;     /* include padding in width */
 }
+
 
 /* Navbar brand alignment */
 .navbar-brand {

@@ -27,6 +27,7 @@ main {
 
 /* Container for multiple images */
 .office-images {
+  border: solid 1px rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   gap: 2rem;

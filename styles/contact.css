@@ -23,12 +23,15 @@ section {
   padding: 50px;
   margin-top: 60px;
   margin-bottom: 40px;
+  margin-left: 10px;
+  border: solid 1px rgb(0,0,0);
   border-radius: 10px;
   flex-wrap: wrap; /* allows content to wrap on small screens */
   gap: 20px;       /* space between items */
 }
 
 section img {
+  border: solid 1px rgb(0,0,0);
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0,0,0);
   max-width: 100%;
@@ -46,6 +49,7 @@ section img {
 .eric {
   height: 200px;
   width: auto;
+  border: solid 2px rgb(122, 161, 235);
 }
 
 /* ---------- Responsive adjustments ---------- */
