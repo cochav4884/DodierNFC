@@ -1,14 +1,19 @@
 /* Base page layout */
 body.page-layout {
   font-family: Arial, sans-serif;
-  background-color: rgb(246, 243, 235);
+  background-color: rgb(255,255,255);
   color: rgb(0, 0, 0);
   line-height: 1.6;
 }
 
 /* Section titles */
 .section {
-  color: rgb(0,0,0,);
+  color: rgb(0,0,0);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  color: rgb(0,0,0);
   margin-bottom: 10px;
 }
 
@@ -18,18 +23,28 @@ p, .text {
   color: rgb(0, 0, 0);
 }
 
+.text-secondary {
+  text-decoration: none;
+}
+
+.text-secondary:hover {
+color:rgb(255,255,255) !important;
+text-decoration: underline;
+}
+
 /* Main container areas */
 .main_container,
 .container {
-  background-color: rgba(52, 93, 47, 0.1);
+  background-color: rgb(122, 161, 235, .8);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 /* Anchor links */
 a {
-  color: rgb(52, 93, 47);
+  color: rgb(0,0,0);
   text-decoration: none;
 }
 
@@ -39,8 +54,8 @@ a:hover {
 
 /* Button-style link (Back to Top, etc.) */
 .btn-link {
-  color: rgb(52, 93, 47);
-  text-decoration: none;
+  color: rgb(0,0,0);
+  text-decoration: none !important;
   font-weight: bold;
   background: none;
   border: none;
@@ -50,19 +65,7 @@ a:hover {
 }
 
 .btn-link:hover {
-  text-decoration: underline;
-}
-
-/* Optional secondary link styling */
-.btn-link2 {
-  color: rgb(30, 70, 30);
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.btn-link2:hover {
-  text-decoration: none;
+  text-decoration: underline !important;
 }
 
 /* Ordered list spacing */
