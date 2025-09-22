@@ -1,0 +1,32 @@
+/* Style the buttons that are used to open and close the accordion panel */
+body {
+    background-color: rgb(122, 161, 235) !important;
+}
+
+main {
+    margin-top: 120px;
+    padding-bottom: 120px;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(165, 170, 181);
+  padding: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+section img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(0,0,0);
+}
+
+.information {
+  margin-top: 120px;
+  margin-left: 60px;
+}
