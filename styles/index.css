@@ -1,9 +1,12 @@
+/* General body layout */
 body {
-    background-color: rgb(122, 161, 235) !important;
+  background-color: rgb(122, 161, 235) !important;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 main {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .mt-4 {
@@ -22,33 +25,66 @@ main {
   border-radius: 0.5rem;
 }
 
-/* New container for multiple images */
+/* Container for multiple images */
 .office-images {
   display: flex;
-  justify-content: space-around; /* spreads images across full width */
-  gap: 2rem;                     /* spacing between images */
-  flex-wrap: wrap;                /* wraps on smaller screens */
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;  /* wraps nicely on smaller screens */
   margin-bottom: 1rem;
 }
 
-/* Updated office image styling for responsiveness */
+/* Office image styling */
 .office {
-  flex: 1 1 200;    /* grows/shrinks, min width 200px */
-  max-width: 250px;   /* limit maximum width */
+  flex: 1 1 200px;   /* flexible with a minimum width */
+  max-width: 250px;  /* don’t let images get too large */
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0);
   margin: 5px;
 }
 
-div p {
-  font-size: 1.25rem;
+/* Image captions */
+.office-caption {
+  font-size: 1.1rem;
   text-align: center;
   margin-top: 0.5rem;
   font-style: italic;
 }
 
+/* Jumbotron wrapper */
 #jumbotron {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 768px) {
+  .office {
+    max-width: 180px;
+  }
+
+  .office-caption {
+    font-size: 1rem;
+  }
+
+  .p-5 {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .office {
+    flex: 1 1 100%;
+    max-width: 100%; /* images take full width */
+  }
+
+  .office-caption {
+    font-size: 0.95rem;
+  }
+
+  .p-5 {
+    padding: 1.5rem;
+  }
 }

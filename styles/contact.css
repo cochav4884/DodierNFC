@@ -1,37 +1,78 @@
-/* Style the buttons that are used to open and close the accordion panel */
+/* General layout */
 body {
-    background-color: rgb(122, 161, 235) !important;
+  background-color: rgb(122, 161, 235) !important;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 main {
-    margin-top: 120px;
-    padding-bottom: 120px;
+  margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 header {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
+/* Section container */
 section {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: rgb(165, 170, 181);
   padding: 50px;
   margin-top: 60px;
   margin-bottom: 40px;
+  border-radius: 10px;
+  flex-wrap: wrap; /* allows content to wrap on small screens */
+  gap: 20px;       /* space between items */
 }
 
 section img {
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgb(0,0,0);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(0,0,0);
+  max-width: 100%;
+  height: auto;
 }
 
+/* Text information */
 .information {
   margin-top: 0;
   margin-left: 60px;
+  max-width: 500px; /* prevents overly long lines */
 }
 
+/* Profile image */
 .eric {
   height: 200px;
   width: auto;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column; /* stack image above text */
+    text-align: center;
+    padding: 30px;
+  }
+
+  .information {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .eric {
+    height: 150px; /* smaller profile image */
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 20px;
+  }
+
+  .eric {
+    height: 120px; /* even smaller for phones */
+  }
 }

@@ -1,10 +1,10 @@
-/* Footer styling */
-/* Make the page a full-height flex column */
+/* Full-height layout */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* full viewport height */
   margin: 0;         /* remove default body margin */
+  font-family: Arial, sans-serif;
 }
 
 /* Main content grows to fill space */
@@ -12,20 +12,24 @@ main {
   flex: 1;
 }
 
+/* Footer base */
 footer {
   margin-top: auto; /* push to bottom */
   background-color: rgb(255,255,255);
-  color: rgb(246, 243, 235);
+  color: rgb(50, 50, 50);
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 10px;
   width: 100%;
+  border-top: 1px solid #ddd;
 }
 
+/* Footer links */
 footer a {
   color: rgb(0,0,0);
-  margin-left: 10px;
-  font-size: 1.2rem;
+  margin: 0 8px;
+  font-size: 1rem;
   text-decoration: none;
+  display: inline-block;
 }
 
 footer a:hover {
@@ -35,8 +39,34 @@ footer a:hover {
 .dnfc-footer {
   font-size: large;
 }
+
 .navbar-brand:hover,
 .pp:hover,
 .tofu:hover {
+  color: rgb(122, 161, 235) !important;
   text-decoration: underline;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 768px) {
+  footer {
+    padding: 12px 8px;
+  }
+
+  footer a {
+    font-size: 0.95rem;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 10px 5px;
+  }
+
+  footer a {
+    display: block;       /* stack links vertically */
+    margin: 6px 0;
+    font-size: 1rem;
+  }
 }

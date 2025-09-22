@@ -1,74 +1,73 @@
-/* Style the buttons that are used to open and close the accordion panel */
+/* General body and layout */
 body {
-    background-color: rgb(122, 161, 235) !important;
+  background-color: rgb(122, 161, 235) !important;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 main {
-    margin-top: 120px;
-    padding-bottom: 120px;
+  margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 header {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
+/* Accordion buttons */
 .accordion {
   background-color: rgb(255,255,255);
   color: rgb(0,0,0);
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   text-align: left;
-  border: none;
+  border: solid 2px rgb(0,0,0);
   outline: none;
   transition: 0.4s;
-  border: solid 2px rgb(0,0,0);
   margin: 5px;
   box-shadow: 2px 2px 4px rgb(0,0,0);
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active, 
+.accordion:hover {
   background-color: rgb(165, 170, 181);
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* Accordion panel */
 .panel {
-  padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
   border: solid 2px rgb(0,0,0);
 }
+
+/* Utility classes */
 .mt-4 {
   margin-top: 1.5rem;
-}
-
-.p-5 {
-  padding: 3rem;
 }
 
 .text-white {
   color: #fff;
 }
-
 .rounded {
   border-radius: 0.5rem;
 }
 
-/* New container for multiple images */
-.office-images, .office2-images {
+/* Accordion image containers */
+.office-images, 
+.office2-images {
   display: flex;
-  justify-content: space-around; /* spreads images across full width */
-  gap: 2rem;                     /* spacing between images */
-  flex-wrap: wrap;                /* wraps on smaller screens */
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
 }
 
-/* Updated office image styling for responsiveness */
-.office, .office2 {
-  flex: 1 1 100;    /* grows/shrinks, min width 200px */
-  max-width: 100px;   /* limit maximum width */
+/* Keep images contained */
+.office, 
+.office2 {
+  flex: 1 1 auto;
+  max-width: 120px;   /* desktop default size */
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0);
@@ -76,10 +75,72 @@ header {
 }
 
 .office2 {
-    max-width: 200px;
+  max-width: 160px;   /* slightly larger group */
+} 
+
+.text-center2 {
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
 }
 
+.text-center2:hover {
+  color: rgb(122, 161, 235) !important;
+  text-decoration: underline;
+}
+/* -------- Responsive adjustments -------- */
+@media (max-width: 768px) {
+  .office {
+    max-width: 100px; /* shrink on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .office {
+    max-width: 80px;  /* even smaller on phones */
+  }
+}
+
+/* Section wrapper */
 section {
-    background-color: rgb(255,255,255);
-    margin-bottom: 120px;
+  background-color: rgb(255,255,255);
+  margin-bottom: 120px;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 768px) {
+  main {
+    margin-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  .accordion {
+    font-size: 0.9rem;
+    padding: 14px;
+  }
+
+  .panel {
+    padding: 0 12px;
+  }
+
+  .p-5 {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+
+  .office, 
+  .office2 {
+    flex: 1 1 100%;
+    max-width: 100%;  /* full width on tiny screens */
+  }
 }

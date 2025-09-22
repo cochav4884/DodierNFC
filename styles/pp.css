@@ -4,38 +4,38 @@ body.page-layout {
   background-color: rgb(255,255,255);
   color: rgb(0, 0, 0);
   line-height: 1.6;
+  margin: 0;
 }
 
 /* Section titles */
-.section {
-  color: rgb(0,0,0);
-  margin-bottom: 10px;
-}
-
+.section,
 .section-title {
   color: rgb(0,0,0);
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* Paragraph text */
 p, .text {
   margin-bottom: 1rem;
   color: rgb(0, 0, 0);
+  font-size: 1rem;
 }
 
+/* Secondary text links */
 .text-secondary {
   text-decoration: none;
 }
 
 .text-secondary:hover {
-color:rgb(255,255,255) !important;
-text-decoration: underline;
+  color: rgb(255,255,255) !important;
+  text-decoration: underline;
 }
 
 /* Main container areas */
 .main_container,
 .container {
-  background-color: rgb(122, 161, 235, .8);
+  background-color: rgba(122, 161, 235, 0.8);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -77,7 +77,39 @@ ol li {
   margin-bottom: 1.5rem;
 }
 
+/* Footer container */
 #footer .container {
   max-width: 100%;
   padding: 0 20px;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 768px) {
+  p, .text {
+    font-size: 0.95rem;
+  }
+
+  .main_container,
+  .container {
+    padding: 15px; /* less padding on tablets */
+  }
+
+  ol li {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  p, .text {
+    font-size: 0.9rem;
+  }
+
+  .main_container,
+  .container {
+    padding: 12px; /* tighter for small phones */
+  }
+
+  ol li {
+    margin-bottom: 0.75rem;
+  }
 }

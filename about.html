@@ -38,7 +38,7 @@
       <header>
         <h1 class="text-center">What We Offer</h1>
         <h3 class="text-center">
-          <p>“From scan to tap — helping you upgrade one code at a time.”</p>
+          <p><i>“From scan to tap — helping you upgrade one code at a time.”</i></p>
         </h3>
       </header>
 
@@ -109,7 +109,11 @@
           </li>
           <li>Location: Dodier NFC, 71 Hobbs St Suite 324, Conway, NH 03818</li>
           <li>Pricing: $250.00 per session.</li>
-        </ul></p>
+        </ul>
+      </p><a class="text-center2 text-dark"  href="contact.html" target="_blank">Contact Us!</a>
+        <div>
+
+        </div>
       </div>
 
       <button type="button" class="accordion text-center">
@@ -147,6 +151,7 @@
               #NFC #SmartTech #Contactless #EventTech
             </li>
           </ul>
+          </p><a class="text-center2 text-dark"  href="contact.html" target="_blank">Contact Us!</a>
       </div>
 
       <button type="button" class="accordion text-center">
@@ -171,11 +176,9 @@
             <li>
               Turn anything into a tappable asset, encoding available & no minimum order required!
             </li>
-            <li>
-               <a href="contact.html" target="_blank">Contact</a> us for a quote!
-            </li>
           </ul>
         </p>
+        </p><a class="text-center2 text-dark"  href="contact.html" target="_blank">Contact Us!</a>
       </div>
 
       <button type="button" class="accordion text-center">
@@ -211,9 +214,7 @@
             We have the right solution to help you serve customers faster and grow your business!
            </b>
           </p>  
-          <p class="con-link">
-            <a href="contact.html" target="_blank">Contact Us!</a>
-          </p>       
+          </p><a class="text-center2 text-dark"  href="contact.html" target="_blank">Contact Us!</a>       
           
       </div>
     </main>
@@ -230,28 +231,33 @@
       loadComponent("footer", "components/footer.html");
     </script>
 
-    <script>
-      // Accordion functionality
-      document.addEventListener("DOMContentLoaded", () => {
-        const accordions = document.querySelectorAll(".accordion");
+<script>
+  // Accordion functionality (single-panel open)
+  document.addEventListener("DOMContentLoaded", () => {
+    const accordions = document.querySelectorAll(".accordion");
 
-        accordions.forEach((accordion) => {
-          accordion.addEventListener("click", function () {
-            // Toggle "active" class for styling
-            this.classList.toggle("active");
-
-            // Get the panel next to this button
-            const panel = this.nextElementSibling;
-
-            // Toggle the panel open/closed
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
+    accordions.forEach((accordion) => {
+      accordion.addEventListener("click", function () {
+        // Close all other panels
+        accordions.forEach((other) => {
+          if (other !== this) {
+            other.classList.remove("active");
+            other.nextElementSibling.style.display = "none";
+          }
         });
+
+        // Toggle the clicked panel
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
       });
-    </script>
+    });
+  });
+</script>
+
   </body>
 </html>
