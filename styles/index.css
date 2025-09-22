@@ -1,3 +1,54 @@
 body {
-    background-color: rgb(122, 161, 235);
+    background-color: rgb(122, 161, 235) !important;
+}
+
+main {
+    margin-top: 120px;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/* New container for multiple images */
+.office-images {
+  display: flex;
+  justify-content: space-around; /* spreads images across full width */
+  gap: 2rem;                     /* spacing between images */
+  flex-wrap: wrap;                /* wraps on smaller screens */
+  margin-bottom: 1rem;
+}
+
+/* Updated office image styling for responsiveness */
+.office {
+  flex: 1 1 200;    /* grows/shrinks, min width 200px */
+  max-width: 250px;   /* limit maximum width */
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0);
+  margin: 5px;
+}
+
+div p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+#jumbotron {
+    display: flex;
+    justify-content: center;
 }
