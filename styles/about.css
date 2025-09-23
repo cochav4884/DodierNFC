@@ -156,3 +156,7 @@ section {
     max-width: 100%;  /* full width on tiny screens */
   }
 }
+
+.move {
+  margin-bottom: 15px;
+}
