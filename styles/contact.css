@@ -14,6 +14,10 @@ header {
   margin-bottom: 60px;
 }
 
+.move {
+  margin-bottom: 15px;
+}
+
 /* Section container */
 section {
   display: flex;
@@ -40,6 +44,7 @@ section img {
 
 /* Text information */
 .information {
+  color: rgb(83, 82, 133) !important;
   margin-top: 0;
   margin-left: 60px;
   max-width: 500px; /* prevents overly long lines */
@@ -104,4 +109,11 @@ section img {
   max-width: 300px;
   border: solid 3px rgb(83, 82, 133);
   border-radius: 10px;
+}
+
+#quote {
+  font-size: 2rem;
+  font-style: italic;
+  color: #333;
+  margin: 20px 0;
 }

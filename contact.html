@@ -36,10 +36,17 @@
 
     <main>
       <header>
-        <h1 class="text-center">Contact Us</h1>
-        <h3 class="text-center">
-          <p><i>“Transforming everyday interactions with the power of contactless connectivity.”</i></p>
-        </h3>
+        <h1 class="move text-center text-light">Contact Us</h1>
+        <div id="quote" class="text-center mt-4 text-light">
+         <h3 class="text-center"><p class="move text-light">
+          <i
+            >“Building a more connected world through reliable contactless NFC
+            technology.”</i
+          >
+        </p>    
+      </h3>
+      </div>
+
       </header>
       <section>
         <div>
@@ -47,13 +54,15 @@
         </div>
         <p><img class="eric" src="images/EricDodier.jpg" alt="Image of Technologist Eric Dodier"></p>
         <div class="information" >
-          <b>
-          <p>Technologist: Eric Dodier</p>
+          <h5>
+            <b>
+          <p>Technologist Eric Dodier</p>
           <p>Email: hello@dodiernfc.com</p>
           <p>Phone: (406) 233-9292</p>
           <p>Address: 71 Hobbs Street Suite 324 Conway, NH 03818</p>
-          <p>You're the best!</p>
+          <p><i>“Transforming everyday interactions with the power of contactless connectivity.”</i></p>
           </b>
+          </h5>
         </div>
       </section>
     </main>
@@ -69,5 +78,19 @@
       loadComponent("navbar", "components/navbar.html");
       loadComponent("footer", "components/footer.html");
     </script>
+ <script>
+  const quotes = [
+    "People may forget names, but they never forget meaningful work.",
+    "What lasts isn’t recognition, but the impact you leave behind.",
+    "Great work speaks long after introductions are forgotten.",
+    "Connections fade, but reliable work endures.",
+    "Your legacy is the quality of your work.",
+    "Excellence is remembered, long after the moment has passed."
+  ];
+
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+  document.getElementById("quote").innerText = `“${randomQuote}”`;
+</script>
   </body>
 </html>

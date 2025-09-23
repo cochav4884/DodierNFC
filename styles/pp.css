@@ -1,24 +1,29 @@
 /* Base page layout */
 body.page-layout {
   font-family: Arial, sans-serif;
-  background-color: rgb(255,255,255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(83, 82, 133);
+  color: rgb(255, 255, 255);
   line-height: 1.6;
   margin: 0;
 }
 
 /* Section titles */
 .section,
-.section-title {
-  color: rgb(0,0,0);
+.section-title,
+h4 {
+  color: rgb(83, 82, 133) !important;
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+.section2 {
+  color: rgb(255, 255, 255);
 }
 
 /* Paragraph text */
 p, .text {
   margin-bottom: 1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(83, 82, 133) !important;
   font-size: 1rem;
 }
 
@@ -28,14 +33,15 @@ p, .text {
 }
 
 .text-light:hover {
-  color: rgba(83, 82, 133, 0.8) !important;
+  color: rgb(83, 82, 133) !important;
   text-decoration: underline;
 }
 
 /* Main container areas */
 .main_container,
 .container {
-  background-color: rgba(83, 82, 133, 0.8);
+  background-color: rgb(165, 170, 181);
+  color: rgb(83, 82, 133);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -44,17 +50,18 @@ p, .text {
 
 /* Anchor links */
 a {
-  color: rgb(0,0,0);
+  color: rgb(83, 82, 133) !important;
   text-decoration: none;
 }
 
 a:hover {
+  color: rgb(255, 255, 255) !important;
   text-decoration: underline;
 }
 
 /* Button-style link (Back to Top, etc.) */
 .btn-link {
-  color: rgb(0,0,0);
+  color: rgb(83, 82, 133) !important;
   text-decoration: none !important;
   font-weight: bold;
   background: none;
@@ -65,7 +72,7 @@ a:hover {
 }
 
 .btn-link:hover {
-  color: rgba(83, 82, 133, 0.8) !important;
+  color: rgb(255, 255, 255) !important;
   text-decoration: underline !important;
 }
 

@@ -36,7 +36,8 @@ header {
 
 /* Accordion panel */
 .panel {
-  background-color: white;
+  background-color: rgb(165, 170, 181);
+  color: rgb(83, 82, 133);
   display: none;
   overflow: hidden;
   border: solid 2px rgb(0,0,0);
@@ -89,7 +90,12 @@ header {
   margin-bottom: 60px;
 }
 
+.color {
+  color: rgb(83, 82, 133) !important;
+}
+
 .text-center2 {
+  color: rgb(83, 82, 133) !important;
   text-decoration: none;
   display: flex;
   justify-content: right;
@@ -97,7 +103,7 @@ header {
 }
 
 .text-center2:hover {
-  color: rgb(69, 56, 133) !important;
+  color: rgb(255,255,255) !important;
   text-decoration: underline;
 }
 /* -------- Responsive adjustments -------- */
