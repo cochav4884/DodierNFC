@@ -1,6 +1,6 @@
 /* General body layout */
 body {
-  background-color: rgb(69, 56, 100) !important;
+  background-color: rgb(69, 56, 133) !important;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -90,6 +90,14 @@ main {
   }
 }
 
+.move, .move2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+} 
+
+.move2 {
+  margin-top: 25px;
+}
 
 .video-wrapper {
   position: relative;

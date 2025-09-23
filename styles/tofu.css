@@ -29,14 +29,14 @@ p,
 }
 
 .text-light:hover {
-  color: rgba(69, 56, 100, 0.8) !important;
+  color: rgba(69, 56, 133, 0.8) !important;
   text-decoration: underline;
 }
 
 /* Main container areas */
 .main_container,
 .container {
-  background-color: rgba(69, 56, 100, 0.8); /* switched to rgba for clarity */
+  background-color: rgba(69, 56, 133, 0.8); /* switched to rgba for clarity */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -56,7 +56,7 @@ p,
 }
 
 .btn-link:hover {
-  color: rgba(69, 56, 100, 0.8) !important;
+  color: rgba(69, 56, 133, 0.8) !important;
   text-decoration: underline !important;
 }
 

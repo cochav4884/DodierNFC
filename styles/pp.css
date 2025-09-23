@@ -28,14 +28,14 @@ p, .text {
 }
 
 .text-light:hover {
-  color: rgba(69, 56, 100, 0.8) !important;
+  color: rgba(69, 56, 133, 0.8) !important;
   text-decoration: underline;
 }
 
 /* Main container areas */
 .main_container,
 .container {
-  background-color: rgba(69, 56, 100, 0.8);
+  background-color: rgba(69, 56, 133, 0.8);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .btn-link:hover {
-  color: rgba(69, 56, 100, 0.8) !important;
+  color: rgba(69, 56, 133, 0.8) !important;
   text-decoration: underline !important;
 }
 

@@ -1,6 +1,6 @@
 /* General body and layout */
 body {
-  background-color: rgb(69, 56, 100) !important;
+  background-color: rgb(69, 56, 133) !important;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -97,7 +97,7 @@ header {
 }
 
 .text-center2:hover {
-  color: rgb(69, 56, 100) !important;
+  color: rgb(69, 56, 133) !important;
   text-decoration: underline;
 }
 /* -------- Responsive adjustments -------- */
