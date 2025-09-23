@@ -24,33 +24,23 @@ p,
   color: rgb(0, 0, 0);
 }
 
-.text-secondary {
+.text-light {
   text-decoration: none;
 }
 
-.text-secondary:hover {
-  color: rgb(255, 255, 255) !important;
+.text-light:hover {
+  color: rgba(69, 56, 100, 0.8) !important;
   text-decoration: underline;
 }
 
 /* Main container areas */
 .main_container,
 .container {
-  background-color: rgba(122, 161, 235, 0.8); /* switched to rgba for clarity */
+  background-color: rgba(69, 56, 100, 0.8); /* switched to rgba for clarity */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   text-decoration: none;
-}
-
-/* Anchor links */
-a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* Button-style link (Back to Top, etc.) */
@@ -66,19 +56,8 @@ a:hover {
 }
 
 .btn-link:hover {
+  color: rgba(69, 56, 100, 0.8) !important;
   text-decoration: underline !important;
-}
-
-/* Optional secondary link styling */
-.btn-link2 {
-  color: rgb(30, 70, 30);
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.btn-link2:hover {
-  text-decoration: none;
 }
 
 /* Ordered list spacing */

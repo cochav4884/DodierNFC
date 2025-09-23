@@ -1,6 +1,6 @@
 /* General layout */
 body {
-  background-color: rgb(122, 161, 235) !important;
+  background-color: rgb(69, 56, 100) !important;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -49,7 +49,7 @@ section img {
 .eric {
   height: 200px;
   width: auto;
-  border: solid 2px rgb(122, 161, 235);
+  border: solid 2px rgb(69, 56, 100);
 }
 
 /* ---------- Responsive adjustments ---------- */
@@ -61,12 +61,13 @@ section img {
   }
 
   .information {
+    font-size: 28px;
     margin-left: 0;
     margin-top: 20px;
     max-width: 100%;
   }
 
-  .eric {
+  .offic, .eric {
     height: 150px; /* smaller profile image */
   }
 }
@@ -76,7 +77,31 @@ section img {
     padding: 20px;
   }
 
-  .eric {
+  .office, .eric {
     height: 120px; /* even smaller for phones */
   }
+}
+
+.office-images, .eric-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Keep images contained */
+.office, .eric {
+  flex: 1 1 auto;
+  max-width: 400px;   /* desktop default size */
+  height: auto;
+  border: solid 2px rgb(71, 47, 133);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin: 5px;
+}
+.eric {
+  max-width: 300px;
+  border: solid 3px rgb(71, 47, 133);
+  border-radius: 10px;
 }
