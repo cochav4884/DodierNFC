@@ -1,4 +1,4 @@
-/* General body and layout */
+/* ---------------- General layout ---------------- */
 body {
   background-color: rgb(83, 82, 133) !important;
   margin: 0;
@@ -14,40 +14,45 @@ header {
   margin-bottom: 60px;
 }
 
-/* Accordion buttons */
+section {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 120px;
+}
+
+/* ---------------- Accordion ---------------- */
 .accordion {
-  background-color: rgb(255,255,255);
-  color: rgb(0,0,0);
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
   width: 100%;
   text-align: left;
-  border: solid 2px rgb(0,0,0);
+  border: 2px solid #000;
   outline: none;
   transition: 0.4s;
   margin: 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(0,0,0);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 16px;
 }
 
-.active, 
-.accordion:hover {
+.accordion:hover,
+.accordion.active {
   background-color: rgb(165, 170, 181);
 }
 
-/* Accordion panel */
 .panel {
   background-color: rgb(165, 170, 181);
   color: rgb(83, 82, 133);
   display: none;
   overflow: hidden;
-  border: solid 2px rgb(0,0,0);
+  border: 2px solid #000;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(from color r g b);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin: 10px;
   padding: 10px;
 }
 
-/* Utility classes */
+/* ---------------- Utility classes ---------------- */
 .mt-4 {
   margin-top: 1.5rem;
 }
@@ -55,11 +60,20 @@ header {
 .text-white {
   color: #fff;
 }
+
 .rounded {
   border-radius: 0.5rem;
 }
 
-/* Accordion image containers */
+.move {
+  margin-bottom: 15px;
+}
+
+.color {
+  color: rgb(83, 82, 133) !important;
+}
+
+/* ---------------- Image containers ---------------- */
 .office-images, 
 .office2-images {
   display: flex;
@@ -69,63 +83,41 @@ header {
   margin-bottom: 1rem;
 }
 
-/* Keep images contained */
 .office, 
 .office2 {
-  flex: 1 1 auto;
-  max-width: 120px;   /* desktop default size */
+  flex: 1 1 45%;  /* responsive two-column layout */
+  max-width: 160px;
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin: 5px;
 }
 
 .office2 {
-  max-width: 160px;   /* slightly larger group */
-} 
+  max-width: 180px;  /* slightly larger group */
+}
 
+/* ---------------- Text ---------------- */
 .about-text {
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 60px;
 }
 
-.color {
-  color: rgb(83, 82, 133) !important;
-}
-
 .text-center2 {
   color: rgb(83, 82, 133) !important;
   text-decoration: none;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end; /* fixed */
   padding-bottom: 10px;
 }
 
 .text-center2:hover {
-  color: rgb(255,255,255) !important;
+  color: #fff !important;
   text-decoration: underline;
 }
-/* -------- Responsive adjustments -------- */
-@media (max-width: 768px) {
-  .office {
-    max-width: 100px; /* shrink on tablets */
-  }
-}
 
-@media (max-width: 480px) {
-  .office {
-    max-width: 80px;  /* even smaller on phones */
-  }
-}
-
-/* Section wrapper */
-section {
-  background-color: rgb(255,255,255);
-  margin-bottom: 120px;
-}
-
-/* ---------- Responsive adjustments ---------- */
+/* ---------------- Responsive adjustments ---------------- */
 @media (max-width: 768px) {
   main {
     margin-top: 80px;
@@ -142,11 +134,22 @@ section {
   }
 
   .panel {
-    padding: 0 12px;
+    padding: 12px;
   }
 
   .p-5 {
     padding: 1.5rem;
+  }
+
+  .office, 
+  .office2 {
+    flex: 1 1 45%;
+    max-width: 120px;
+  }
+
+  .about-text {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -158,11 +161,12 @@ section {
 
   .office, 
   .office2 {
-    flex: 1 1 100%;
-    max-width: 100%;  /* full width on tiny screens */
+    flex: 1 1 100%;  /* stack vertically */
+    max-width: 100%;
   }
-}
 
-.move {
-  margin-bottom: 15px;
+  .about-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

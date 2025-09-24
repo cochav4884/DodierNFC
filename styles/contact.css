@@ -1,4 +1,4 @@
-/* General layout */
+/* ---------------- General layout ---------------- */
 body {
   background-color: rgb(83, 82, 133) !important;
   margin: 0;
@@ -18,31 +18,29 @@ header {
   margin-bottom: 15px;
 }
 
-/* Section container */
+/* ---------------- Section container ---------------- */
 section {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(165, 170, 181);
   padding: 50px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  margin-left: 10px;
-  border: solid 1px rgb(0,0,0);
+  margin: 60px 10px 40px 10px;
+  border: 1px solid #000;
   border-radius: 10px;
-  flex-wrap: wrap; /* allows content to wrap on small screens */
-  gap: 20px;       /* space between items */
+  flex-wrap: wrap;   /* allows content to wrap on small screens */
+  gap: 20px;         /* space between items */
 }
 
 section img {
-  border: solid 1px rgb(0,0,0);
+  border: 1px solid #000;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(0,0,0);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   max-width: 100%;
   height: auto;
 }
 
-/* Text information */
+/* ---------------- Text ---------------- */
 .information {
   color: rgb(83, 82, 133) !important;
   margin-top: 0;
@@ -50,14 +48,41 @@ section img {
   max-width: 500px; /* prevents overly long lines */
 }
 
-/* Profile image */
-.eric {
-  height: 200px;
-  width: auto;
-  border: solid 2px rgb(83, 82, 133);
+#quote {
+  font-size: 2rem;
+  font-style: italic;
+  color: #333;
+  margin: 20px 0;
 }
 
-/* ---------- Responsive adjustments ---------- */
+/* ---------------- Images ---------------- */
+.office-images, 
+.eric-images {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;  /* wraps nicely on smaller screens */
+  margin-bottom: 1rem;
+}
+
+.office, 
+.eric {
+ flex: 1 1 200px;   /* flexible with a minimum width */
+  max-width: 250px;  /* don’t let images get too large */
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+
+.eric {
+  max-width: 300px;  /* profile image smaller */
+  border: 3px solid rgb(83, 82, 133);
+  border-radius: 10px;
+}
+
+/* ---------------- Responsive adjustments ---------------- */
 @media (max-width: 768px) {
   section {
     flex-direction: column; /* stack image above text */
@@ -66,14 +91,16 @@ section img {
   }
 
   .information {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-left: 0;
     margin-top: 20px;
     max-width: 100%;
   }
 
-  .offic, .eric {
-    height: 150px; /* smaller profile image */
+  .office, 
+  .eric {
+    max-width: 200px;
+    height: auto; /* keep aspect ratio */
   }
 }
 
@@ -82,38 +109,13 @@ section img {
     padding: 20px;
   }
 
-  .office, .eric {
-    height: 120px; /* even smaller for phones */
+  .office, 
+  .eric {
+    max-width: 150px;
+    height: auto;
   }
-}
 
-.office-images, .eric-images {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-/* Keep images contained */
-.office, .eric {
-  flex: 1 1 auto;
-  max-width: 400px;   /* desktop default size */
-  height: auto;
-  border: solid 2px rgb(83, 82, 133);
-  border-radius: 0.5rem;
-  box-shadow: 2px 2px 4px rgb(0, 0, 0);
-  margin: 5px;
-}
-.eric {
-  max-width: 300px;
-  border: solid 3px rgb(83, 82, 133);
-  border-radius: 10px;
-}
-
-#quote {
-  font-size: 2rem;
-  font-style: italic;
-  color: #333;
-  margin: 20px 0;
+  .information {
+    font-size: 1.25rem;
+  }
 }

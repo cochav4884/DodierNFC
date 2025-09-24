@@ -1,4 +1,4 @@
-/* General body layout  */
+/* ---------------- General layout ---------------- */
 body {
   background-color: rgb(83, 82, 133) !important;
   margin: 0;
@@ -25,9 +25,19 @@ main {
   border-radius: 0.5rem;
 }
 
-/* Container for multiple images */
+.move,
+.move2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.move2 {
+  margin-top: 25px;
+}
+
+/* ---------------- Image gallery ---------------- */
 .office-images {
-  border: solid 1px rgb(0, 0, 0);
+  border: 1px solid #000;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -35,17 +45,15 @@ main {
   margin-bottom: 1rem;
 }
 
-/* Office image styling */
 .office {
   flex: 1 1 200px;   /* flexible with a minimum width */
   max-width: 250px;  /* don’t let images get too large */
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin: 5px;
 }
 
-/* Image captions */
 .office-caption {
   font-size: 1.1rem;
   text-align: center;
@@ -53,14 +61,39 @@ main {
   font-style: italic;
 }
 
-/* Jumbotron wrapper */
+/* ---------------- Jumbotron ---------------- */
 #jumbotron {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
-/* ---------- Responsive adjustments ---------- */
+/* ---------------- Video wrapper ---------------- */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------- Quote ---------------- */
+#quote {
+  font-size: 2rem;
+  font-style: italic;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* ---------------- Responsive adjustments ---------------- */
 @media (max-width: 768px) {
   .office {
     max-width: 180px;
@@ -88,36 +121,4 @@ main {
   .p-5 {
     padding: 1.5rem;
   }
-}
-
-.move, .move2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-} 
-
-.move2 {
-  margin-top: 25px;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#quote {
-  font-size: 2rem;
-  font-style: italic;
-  color: #333;
-  margin: 20px 0;
 }

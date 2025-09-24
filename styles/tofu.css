@@ -1,14 +1,15 @@
-/* Base page layout */
+/* ---------------- Base Page Layout ---------------- */
 body.page-layout {
   font-family: Arial, sans-serif;
   background-color: rgb(83, 82, 133);
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
   line-height: 1.6;
+  margin: 0;
 }
 
-/* Section titles */
+/* ---------------- Section Titles ---------------- */
 .section {
-  color: rgb(255, 255, 255);
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -17,11 +18,11 @@ body.page-layout {
   margin-bottom: 10px;
 }
 
-/* Paragraph text */
+/* ---------------- Text ---------------- */
 p,
 .text {
   margin-bottom: 1rem;
- color: rgb(83, 82, 133);
+  color: rgb(83, 82, 133);
 }
 
 .text-light {
@@ -33,10 +34,10 @@ p,
   text-decoration: underline;
 }
 
-/* Main container areas */
+/* ---------------- Containers ---------------- */
 .main_container,
 .container {
-  background-color: rgb(165, 170, 181); /* switched to rgba for clarity */
+  background-color: rgb(165, 170, 181);
   color: rgb(83, 82, 133) !important;
   padding: 20px;
   border-radius: 8px;
@@ -44,7 +45,7 @@ p,
   text-decoration: none;
 }
 
-/* Button-style link (Back to Top, etc.) */
+/* ---------------- Button-style Links ---------------- */
 .btn-link {
   color: rgb(83, 82, 133);
   text-decoration: none !important;
@@ -57,11 +58,11 @@ p,
 }
 
 .btn-link:hover {
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
   text-decoration: underline !important;
 }
 
-/* Ordered list spacing */
+/* ---------------- Lists ---------------- */
 ol {
   padding-left: 1.2rem;
 }

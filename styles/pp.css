@@ -1,13 +1,13 @@
-/* Base page layout */
+/* ---------------- Base Page Layout ---------------- */
 body.page-layout {
   font-family: Arial, sans-serif;
   background-color: rgb(83, 82, 133);
-  color: rgb(255, 255, 255);
+  color: #fff;
   line-height: 1.6;
   margin: 0;
 }
 
-/* Section titles */
+/* ---------------- Section Titles ---------------- */
 .section,
 .section-title,
 h4 {
@@ -17,11 +17,12 @@ h4 {
 }
 
 .section2 {
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
-/* Paragraph text */
-p, .text {
+/* ---------------- Paragraphs & Text ---------------- */
+p,
+.text {
   margin-bottom: 1rem;
   color: rgb(83, 82, 133) !important;
   font-size: 1rem;
@@ -37,7 +38,7 @@ p, .text {
   text-decoration: underline;
 }
 
-/* Main container areas */
+/* ---------------- Containers ---------------- */
 .main_container,
 .container {
   background-color: rgb(165, 170, 181);
@@ -48,18 +49,18 @@ p, .text {
   text-decoration: none;
 }
 
-/* Anchor links */
+/* ---------------- Links ---------------- */
 a {
   color: rgb(83, 82, 133) !important;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
   text-decoration: underline;
 }
 
-/* Button-style link (Back to Top, etc.) */
+/* Button-style links (Back to Top, etc.) */
 .btn-link {
   color: rgb(83, 82, 133) !important;
   text-decoration: none !important;
@@ -72,11 +73,11 @@ a:hover {
 }
 
 .btn-link:hover {
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
   text-decoration: underline !important;
 }
 
-/* Ordered list spacing */
+/* ---------------- Lists ---------------- */
 ol {
   padding-left: 1.2rem;
 }
@@ -85,15 +86,16 @@ ol li {
   margin-bottom: 1.5rem;
 }
 
-/* Footer container */
+/* ---------------- Footer ---------------- */
 #footer .container {
   max-width: 100%;
   padding: 0 20px;
 }
 
-/* ---------- Responsive adjustments ---------- */
+/* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
-  p, .text {
+  p,
+  .text {
     font-size: 0.95rem;
   }
 
@@ -108,13 +110,14 @@ ol li {
 }
 
 @media (max-width: 480px) {
-  p, .text {
+  p,
+  .text {
     font-size: 0.9rem;
   }
 
   .main_container,
   .container {
-    padding: 12px; /* tighter for small phones */
+    padding: 12px; /* tighter padding for small phones */
   }
 
   ol li {

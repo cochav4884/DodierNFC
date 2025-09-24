@@ -1,4 +1,4 @@
-/* Navbar wrapper */
+/* ---------------- Navbar Wrapper ---------------- */
 nav {
   width: 100%;
 }
@@ -7,11 +7,11 @@ nav {
 #navbar {
   position: fixed;
   top: 0;
-  left: 50%;                 /* center the navbar */
-  transform: translateX(-50%); /* fix horizontal shift */
-  width: calc(100% - 20px);  /* leave a small margin for shadow/rounding */
+  left: 50%;                      /* center the navbar */
+  transform: translateX(-50%);    /* fix horizontal shift */
+  width: calc(100% - 20px);       /* small margin for shadow/rounding */
   z-index: 1020;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   min-height: 60px;
@@ -19,21 +19,19 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  box-sizing: border-box;     /* include padding in width */
+  box-sizing: border-box;          /* include padding in width */
 }
 
-
-/* Navbar brand alignment */
+/* Brand / logo */
 .navbar-brand {
   display: flex;
   align-items: center;
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
-  color: rgb(0,0,0);
+  color: #000;
 }
 
-/* Logo size */
 .logo-img {
   height: 40px;
   width: auto;
@@ -41,67 +39,63 @@ nav {
   margin-right: 8px;
 }
 
-/* Navbar links container */
+/* Links container */
 .navbar-nav {
   display: flex;
   align-items: center;
   gap: 1rem;
   background-color: rgb(165, 170, 181) !important;
-  border: solid 1px rgb(0, 0, 0);
+  border: 1px solid #000;
   border-radius: 10px;
 }
 
-/* Navbar links */
+/* Links */
 .navbar-nav .nav-link {
   font-size: 16px;
- color: rgb(83, 82, 133) !important;
+  color: rgb(83, 82, 133) !important;
   padding: 0.5rem 0.75rem;
   transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
-/* Hover & active states */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: rgb(255,255,255) !important; /* match footer link color */
+  color: #fff !important;
   text-decoration: underline;
 }
 
-/* Hamburger button (hidden by default) */
+/* Hamburger button (hidden desktop) */
 .navbar-toggler {
   display: none;
   font-size: 1.5rem;
   border: none;
   background: transparent;
   cursor: pointer;
-  color: rgb(0,0,0);
+  color: #000;
 }
 
-/* Add padding to body for fixed navbar */
+/* Padding for body so navbar doesn’t overlap */
 body.page-layout {
-  padding-top: 60px; /* match navbar height */
+  padding-top: 60px; /* matches navbar height */
 }
 
-/* ---------- Responsive adjustments ---------- */
+/* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
-  /* Show hamburger */
   .navbar-toggler {
     display: block;
   }
 
-  /* Hide nav links until toggled */
   .navbar-nav {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: #fff;
     position: absolute;
     top: 60px;
     left: 0;
     padding: 1rem 0;
-    box-shadow: 0 2px 6px rgb(0, 0, 0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   }
 
-  /* Show nav when active */
   .navbar-nav.show {
     display: flex;
   }
