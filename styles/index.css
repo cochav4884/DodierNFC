@@ -95,6 +95,15 @@ section {
   margin-bottom: 60px;
 }
 
+section.container img,
+section.container p,
+section.container h1,
+section.container h5 {
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* ---------------- Quote ---------------- */
 #quote {
   font-size: 2rem;
@@ -128,9 +137,7 @@ section {
     font-size: 0.95rem;
   }
 
-  #index,
-  #contact,
-  #back {
+section {
      padding-left: 15px !important;
     padding-right: 15px !important;
     margin-left: 0 !important;
