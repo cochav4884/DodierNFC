@@ -123,6 +123,12 @@ section {
   text-decoration: underline;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* ---------------- Responsive adjustments ---------------- */
 @media (max-width: 768px) {
   main {
