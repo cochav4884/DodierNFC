@@ -91,7 +91,7 @@ section {
 
 .office, 
 .office2 {
-  flex: 1 1 200px;   /* flexible with a minimum width */
+ flex: 1 1 200px;   /* flexible with a minimum width */
   max-width: 250px;  /* don’t let images get too large */
   height: auto;
   border-radius: 0.5rem;
