@@ -81,10 +81,6 @@ main {
   height: 100%;
 }
 
-iframe {
-  padding: 10px;
-}
-
 section {
   background-color: rgb(165, 170, 181);
   display: flex;
