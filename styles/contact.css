@@ -28,6 +28,7 @@ section {
   margin: 60px 10px 40px 10px;
   border: 1px solid #000;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(0,0,0);
   flex-wrap: wrap;   /* allows content to wrap on small screens */
   gap: 20px;         /* space between items */
 }
@@ -35,7 +36,7 @@ section {
 section img {
   border: 1px solid #000;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 4px rgb(0,0,0);
   max-width: 100%;
   height: auto;
 }
@@ -59,6 +60,7 @@ section img {
 .office-images, 
 .eric-images {
   border: 1px solid #000;
+  box-shadow: 2px 2px 4px rgb(0,0,0);
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -72,7 +74,7 @@ section img {
   max-width: 250px;  /* don’t let images get too large */
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgb(0,0,0);
   margin: 5px;
 }
 
@@ -117,5 +119,14 @@ section img {
 
   .information {
     font-size: 1.25rem;
+  }
+
+  #index,
+  #contact,
+  #back {
+     padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
