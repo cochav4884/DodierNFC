@@ -89,20 +89,12 @@ section {
   background-color: rgb(165, 170, 181);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   margin-bottom: 60px;
 }
-
-section.container img,
-section.container p,
-section.container h1,
-section.container h5 {
-  display: block;
-  margin: 0 auto;
-}
-
 
 /* ---------------- Quote ---------------- */
 #quote {
@@ -110,6 +102,12 @@ section.container h5 {
   font-style: italic;
   color: #333;
   margin: 20px 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* ---------------- Responsive adjustments ---------------- */
