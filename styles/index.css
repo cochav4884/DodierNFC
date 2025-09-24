@@ -67,6 +67,7 @@ main {
 /* ---------------- Video wrapper ---------------- */
 .video-wrapper {
   position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -80,16 +81,18 @@ main {
   height: 100%;
 }
 
+iframe {
+  padding: 10px;
+}
+
 section {
   background-color: rgb(165, 170, 181);
   display: flex;
   justify-content: center;
+  border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
-  margin-left: 10px;
   margin-bottom: 60px;
 }
-
-
 
 /* ---------------- Quote ---------------- */
 #quote {
