@@ -87,9 +87,6 @@ main {
 
 section {
   background-color: rgb(165, 170, 181);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
@@ -136,7 +133,7 @@ section {
   }
 
 section {
-     padding-left: 15px !important;
+    padding-left: 15px !important;
     padding-right: 15px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;

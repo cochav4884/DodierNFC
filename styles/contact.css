@@ -20,10 +20,6 @@ header {
 
 /* ---------------- Section container ---------------- */
 section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   background-color: rgb(165, 170, 181);
   padding: 50px;
   margin: 60px 10px 40px 10px;
@@ -128,9 +124,7 @@ section img {
     font-size: 1.25rem;
   }
 
-  #index,
-  #contact,
-  #back {
+  section  {
      padding-left: 15px !important;
     padding-right: 15px !important;
     margin-left: 0 !important;
