@@ -53,6 +53,10 @@ section img {
   box-shadow: 2px 2px 4px rgb(0,0,0);
   max-width: 100%;
   height: auto;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 *,
