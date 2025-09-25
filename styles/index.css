@@ -32,7 +32,7 @@ main {
 }
 
 /* ---------------- Image gallery ---------------- */
-.office-images {
+.office-images, .office3-images {
   border: 1px solid #000;
   box-shadow: 2px 2px 4px rgb(0,0,0);
   display: flex;
@@ -42,20 +42,26 @@ main {
   margin-bottom: 1rem;
 }
 
-.office {
+.office, office3 {
   flex: 1 1 200px;   /* flexible with a minimum width */
   max-width: 250px;  /* don’t let images get too large */
   height: auto;
+  border: solid 1px rgb(0, 0, 0);
   border-radius: 0.5rem;
   box-shadow: 2px 2px 4px rgb(0,0,0);
   margin: 5px;
 }
 
-.office-caption {
+.office-caption, .office3-caption {
   font-size: 1.1rem;
   text-align: center;
   margin-top: 0.5rem;
   font-style: italic;
+}
+
+.office3 {
+  color: transparent !important ;
+  background-color: transparent !important;
 }
 
 /* Jumbotron section spacing */
@@ -123,6 +129,16 @@ section {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.move-text {
+  margin: 15px;
+  font-size: 1.5rem;
+}
+
+.img-fluid {
+  border: solid 1px rgb(0, 0, 0);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 /* ---------------- Responsive adjustments ---------------- */

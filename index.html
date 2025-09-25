@@ -34,7 +34,7 @@
 
     <main>
       <header>
-        <h1 class="text-center">
+        <h1 class="text-center container">
           <img
             src="images/logo.jpg"
             alt="image of Dodier NFC logo"
@@ -42,50 +42,48 @@
           />
         </h1>
       </header>
-       <div id="quote" class="text-center mt-4 text-light">
-         <h3 class="text-center"><p class="move text-light">
-          <i
-            >“Building a more connected world through reliable contactless NFC
-            technology.”</i
-          >
-        </p>    
-      </h3>
+      <div id="quote" class="text-center mt-4 text-light">
+        <h3 class="text-center">
+          <p class="move text-light">
+            <i
+              >“Building a more connected world through reliable contactless NFC
+              technology.”</i
+            >
+          </p>
+        </h3>
       </div>
-      <header>
-         <h1 class="text-center">
-          <img
-            src="images/office5.jpg"
-            alt="image of Dodier NFC logo"
-            class="office text-center"
-          />  
-          <img
-            src="images/office.jpg"
-            alt="image of Dodier NFC logo"
-            class="office text-center"
-          />
-         <img
-            src="images/office7.jpg"
-            alt="image of Dodier NFC logo"
-            class="office text-center"
-          />
-          </h1>
-      </header>
-      
-      
-     
-      
-      <section class="container" id="jumbotron">
-        <div class="video-wrapper">
-          <iframe
-            src="videos/scanVideo.mp4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-        </iframe>
-        </div>
-      </section>
+
+      <section class="container my-5" id="jumbotron">
+  <div class="row align-items-center">
+    <!-- Left image -->
+    <div class="col-md-5 text-center">
+      <img
+        src="images/office7.jpg"
+        alt="Office workspace"
+        class="img-fluid rounded"
+      />
+    </div>
+
+    <!-- Right text -->
+    <div class="col-md-7 text-light">
+      <p class="move-text">
+        <b>Near Field Communication (NFC)</b> is a low-cost, contactless
+        technology operating at 13.56 MHz with an ultra-short range and
+        data rates up to 1.7 Mbit/s.
+      </p>
+      <p class="move-text">
+        Its ultra-short range, low-latency connection, and ability to power
+        one side of the link make NFC ideal for secure, instant
+        interactions.
+      </p>
+      <p class="move-text">
+        NFC supports both data and power exchange, enabling applications in
+        payments, access control, smart devices, and more.
+      </p>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <!-- Footer -->
@@ -99,20 +97,23 @@
       loadComponent("navbar", "components/navbar.html");
       loadComponent("footer", "components/footer.html");
     </script>
- <script>
-  const quotes = [
-    "People may forget names, but they never forget meaningful work.",
-    "What lasts isn’t recognition, but the impact you leave behind.",
-    "Great work speaks long after introductions are forgotten.",
-    "Connections fade, but reliable work endures.",
-    "Your legacy is the quality of your work.",
-    "Excellence is remembered, long after the moment has passed."
-  ];
+    <script>
+      const quotes = [
+        "People may forget names, but they never forget meaningful work.",
+        "What lasts isn’t recognition, but the impact you leave behind.",
+        "Great work speaks long after introductions are forgotten.",
+        "People will forget what you did, but will never forget how you made them feel.",
+        "Your legacy is the quality of your work.",
+        "Excellence is remembered, long after the moment has passed.",
+        "Buy a staircase.",
+        "True value is measured not in words,but in lasting results.",
+        "Work done with integrity creates an impact that time cannot erase.",
+        "Recognition fades, but meaningful contributions endure"
+      ];
 
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-  document.getElementById("quote").innerText = `“${randomQuote}”`;
-</script>
-
+      document.getElementById("quote").innerText = `“${randomQuote}”`;
+    </script>
   </body>
 </html>
