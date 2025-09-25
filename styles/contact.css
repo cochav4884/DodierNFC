@@ -19,7 +19,6 @@ header {
 }
 
 /* ---------------- Section container ---------------- */
-/* Ensure all sections stay centered */
 section {
   background-color: rgb(165, 170, 181);
   display: flex;
@@ -30,22 +29,20 @@ section {
   border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
-  margin: 0 auto 60px auto;  /* centers section itself */
-  max-width: 1100px;         /* optional: keeps from being too wide */
+  margin: 0 auto 60px auto;  
+  max-width: 1100px;         
 }
 
 /* On very small screens */
 @media (max-width: 480px) {
   section {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
+    width: 100%;       
+    max-width: 100%;   
+    padding: 15px;     
     margin-left: auto !important;
-    margin-right: auto !important; /* ensures centering */
+    margin-right: auto !important;
   }
 }
-
-
 
 section img {
   border: 1px solid #000;
@@ -53,7 +50,7 @@ section img {
   box-shadow: 2px 2px 4px rgb(0,0,0);
   max-width: 100%;
   height: auto;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -70,7 +67,7 @@ section img {
   color: rgb(83, 82, 133) !important;
   margin-top: 0;
   margin-left: 60px;
-  max-width: 500px; /* prevents overly long lines */
+  max-width: 500px;
 }
 
 #quote {
@@ -88,14 +85,14 @@ section img {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;  /* wraps nicely on smaller screens */
+  flex-wrap: wrap;  
   margin-bottom: 1rem;
 }
 
 .office, 
 .eric {
- flex: 1 1 200px;   /* flexible with a minimum width */
-  max-width: 250px;  /* don’t let images get too large */
+  flex: 1 1 200px;   
+  max-width: 250px;  
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 4px rgb(0,0,0);
@@ -103,7 +100,7 @@ section img {
 }
 
 .eric {
-  max-width: 300px;  /* profile image smaller */
+  max-width: 300px;  
   border: 3px solid rgb(83, 82, 133);
   border-radius: 10px;
 }
@@ -111,7 +108,7 @@ section img {
 /* ---------------- Responsive adjustments ---------------- */
 @media (max-width: 768px) {
   section {
-    flex-direction: column; /* stack image above text */
+    flex-direction: column;
     text-align: center;
     padding: 30px;
   }
@@ -126,13 +123,15 @@ section img {
   .office, 
   .eric {
     max-width: 200px;
-    height: auto; /* keep aspect ratio */
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   section {
     padding: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .office, 
@@ -144,5 +143,4 @@ section img {
   .information {
     font-size: 1.25rem;
   }
-
 }

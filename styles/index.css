@@ -69,8 +69,8 @@ main {
 /* Video Wrapper */
 .video-wrapper {
   position: relative;
-  width: 100%;            /* fill container width */
-  max-width: 1100px;       /* make it bigger inside the container */
+  width: 100%;            
+  max-width: 1100px;      
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   margin: 0 auto;         /* center the video */
@@ -80,7 +80,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;            /* scale to wrapper width */
+  width: 100%;            
   height: 100%;
   border: 0;
 }
@@ -96,22 +96,20 @@ section {
   border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
-  margin: 0 auto 60px auto;  /* centers section itself */
-  max-width: 1100px;         /* optional: keeps from being too wide */
+  margin: 0 auto 60px auto;  
+  max-width: 1100px;         
 }
 
 /* On very small screens */
 @media (max-width: 480px) {
   section {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
+    width: 100%;       
+    max-width: 100%;   
+    padding: 15px;     
     margin-left: auto !important;
-    margin-right: auto !important; /* ensures centering */
+    margin-right: auto !important;
   }
 }
-
-
 
 /* ---------------- Quote ---------------- */
 #quote {
@@ -145,10 +143,10 @@ section {
 @media (max-width: 480px) {
   .office {
     flex: 1 1 100%;
-    max-width: 100%; /* images take full width */
+    max-width: 100%; 
   }
 
   .office-caption {
     font-size: 0.95rem;
   }
-
+}
