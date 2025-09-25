@@ -39,18 +39,18 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(69, 56, 100);
+  color: rgb(57, 64, 132);
 }
 
 .dnfc-footer {
-  color: rgb(83, 82, 133) !important;
+  color: rgb(57, 64, 132) !important;
   font-size: large;
 }
 
 .navbar-brand:hover,
 .pp:hover,
 .tofu:hover {
-  color: rgb(83, 82, 133) !important;
+  color: rgb(57, 64, 132) !important;
   text-decoration: underline;
 }
 

@@ -52,7 +52,7 @@ nav {
 /* Links */
 .navbar-nav .nav-link {
   font-size: 16px;
-  color: rgb(83, 82, 133) !important;
+  color: rgb(57, 64, 132) !important;
   padding: 0.5rem 0.75rem;
   transition: color 0.2s ease, text-decoration 0.2s ease;
 }
