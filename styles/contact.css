@@ -19,16 +19,33 @@ header {
 }
 
 /* ---------------- Section container ---------------- */
+/* Ensure all sections stay centered */
 section {
   background-color: rgb(165, 170, 181);
-  padding: 50px;
-  margin: 60px 10px 40px 10px;
-  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(0,0,0);
-  flex-wrap: wrap;   /* allows content to wrap on small screens */
-  gap: 20px;         /* space between items */
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin: 0 auto 60px auto;  /* centers section itself */
+  max-width: 1100px;         /* optional: keeps from being too wide */
+  padding: 20px;
 }
+
+/* On very small screens */
+@media (max-width: 480px) {
+  section {
+    width: 100%;       /* fill screen */
+    max-width: 100%;   /* no overflow */
+    padding: 15px;     /* breathing room */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 section img {
   border: 1px solid #000;
