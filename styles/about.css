@@ -35,7 +35,7 @@ section {
   transition: 0.4s;
   margin: 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
   padding: 16px;
 }
 
@@ -51,7 +51,7 @@ section {
   overflow: hidden;
   border: 2px solid #000;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
   margin: 10px;
   padding: 10px;
 }

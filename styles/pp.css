@@ -2,7 +2,7 @@
 body.page-layout {
   font-family: Arial, sans-serif;
   background-color: rgb(57, 64, 132);
-  color: #fff;
+  color: rgb(255, 255, 255);
   line-height: 1.6;
   margin: 0;
 }
@@ -17,7 +17,7 @@ h4 {
 }
 
 .section2 {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /* ---------------- Paragraphs & Text ---------------- */
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .btn-link:hover {
-  color: #fff !important;
+  color: rgb(255, 255, 255) !important;
   text-decoration: underline !important;
 }
 
