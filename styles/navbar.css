@@ -11,7 +11,7 @@ nav {
   transform: translateX(-50%);    /* fix horizontal shift */
   width: calc(100% - 20px);       /* small margin for shadow/rounding */
   z-index: 1020;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgb(0, 0, 0);
   min-height: 60px;
