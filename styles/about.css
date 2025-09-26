@@ -129,6 +129,21 @@ section {
   box-sizing: border-box;
 }
 
+.video-player {
+  display: block;
+  position: relative;
+  left: 0;
+  margin: 20px 0 20px 0;   /* spacing top/bottom only */
+  max-width: 250px;        /* keep it smaller */
+  width: 100%;             /* responsive scaling */
+  height: auto;            /* preserve aspect ratio */
+  border-radius: 10px;     /* optional */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
 /* ---------------- Responsive adjustments ---------------- */
 @media (max-width: 768px) {
   main {
